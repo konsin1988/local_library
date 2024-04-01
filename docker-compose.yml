@@ -1,0 +1,19 @@
+version: "7.7.0"
+
+services:
+  mongo:
+    image: mongo
+    container_name: local_library
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: local_library
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: 12345678
+      MONGODB_DB: local_library
+      MONGODB_USER: konsin1988
+      MONGODB_PASSWORD: 1234
+    volumes:
+      - "./data/db:/data/db"
+      - "./data/configdb:/data/config"
