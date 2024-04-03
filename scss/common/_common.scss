@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.raw {
+  min-width: 600px;
+  max-width: 800px;
+  width: 70vw;
+  height: 100vh;
+  position: relative;
+  background: #fff9f9;
+}

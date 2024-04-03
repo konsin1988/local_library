@@ -1,0 +1,19 @@
+mixin Header(num)
+    - classes = [];
+    - classes[num] = 'active'
+
+
+    header
+        ul
+            li(class=classes[0])
+                span(class="material-symbols-outlined") home
+                span Home 
+            li(class=classes[1]) 
+                span(class="material-symbols-outlined") notifications
+                span Notifications 
+            li(class=classes[2]) 
+                span(class="material-symbols-outlined") search
+                span Search
+            li(class=classes[3]) 
+                span(class="material-symbols-outlined") book_4
+                span Book Store

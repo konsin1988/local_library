@@ -4,7 +4,13 @@
   "description": "local library",
   "main": "app.js",
   "scripts": {
-    "start": "concurrently \"docker compose up -d\" \"nodemon server.js\" \"node app.js --watch\""
+    "start": "concurrently \"docker compose up -d\" \"nodemon server.js\""
+  },
+  "nodemonConfig": {
+    "watch": [
+      "."
+    ],
+    "ext": "pug, js, css"
   },
   "repository": {
     "type": "git",

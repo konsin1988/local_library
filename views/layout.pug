@@ -1,6 +1,12 @@
+include ./mixins/index
+
 doctype html
-html
-  include ./head.pug
+html(lang='ru')
+    head
+        include ./static/_head
+        title=title
     
-  body
-    block content
+    body
+        .container
+            .raw
+                block content

@@ -1,5 +1,36 @@
-.green {
-  background: green;
-  width: 200px;
-  height: 200px;
+body {
+  font-family: Inter;
+}
+
+.logo-user {
+  margin-top: 60px;
+  //   background: green;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+    // padding: 0 5%;
+    // background: green;
+    img {
+      width: 57px;
+      margin: 32.5px 40px;
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #4a3737;
+      font-weight: 600;
+    }
+  }
+}
+.user {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10%;
+  img {
+    width: 80px;
+  }
 }

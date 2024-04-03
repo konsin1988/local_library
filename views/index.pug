@@ -1,6 +1,18 @@
-extends layout
+extends layout 
+
+
 
 block content
-    h1 Local library
-    p Welcome to local_library
-    .green Green square
+    body 
+        +Header(0)
+        .logo-user
+            .logo
+                img(src="./images/logo.png" alt="logo")
+                h1 Albrain Books 
+            .user
+                img(src="./images/user.jpg" alt="user")
+
+    
+            
+    
+    
