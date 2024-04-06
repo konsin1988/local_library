@@ -4,7 +4,6 @@ body {
 
 .logo-user {
   margin-top: 60px;
-  //   background: green;
   height: 120px;
   display: flex;
   align-items: center;
@@ -12,16 +11,15 @@ body {
   .logo {
     display: flex;
     align-items: center;
-    margin: 0 5%;
-    // padding: 0 5%;
-    // background: green;
+    // margin-left: 2%;
+    flex: 1;
     img {
       width: 57px;
-      margin: 32.5px 40px;
+      margin: 32.5px 20px;
     }
     h1 {
       font-size: 2.2em;
-      color: #4a3737;
+      color: $darkTextColor;
       font-weight: 600;
     }
   }
@@ -29,8 +27,93 @@ body {
 .user {
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 10%;
+  margin: 2% 10% 0 1%;
   img {
     width: 80px;
   }
+}
+
+.tematic_section {
+  h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: $primaryColor;
+    padding: 0 5%;
+  }
+}
+.cards {
+  display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  margin-top: 3%;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  min-width: fit-content;
+}
+.card {
+  width: 45%;
+  border-radius: 25px;
+  height: 450px;
+  position: relative;
+  box-shadow: 0 10px 10px $shadowColor;
+  margin: 0 3% 3% 3%;
+  display: none;
+  img {
+    @include linkActive(0.98);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 5px 5px $shadowColor;
+  }
+  h3 {
+    @include linkActive(0.95);
+    margin-top: 100%;
+    color: $primaryColor;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 0 7%;
+  }
+  p {
+    color: $darkTextColor;
+    padding: 2% 7%;
+    font-size: 1.1em;
+  }
+
+  .rating {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+  }
+  .filled-star {
+    color: $primaryColor;
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+  .not-filled-star {
+    color: $primaryColor;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+}
+.controls {
+  margin-top: -1%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1%;
+  span {
+    font-size: 40px;
+    padding: 1.7%;
+    color: $primaryColor;
+    text-shadow: 0 4px 2px $shadowColor;
+    @include linkActive(0.6);
+  }
+}
+hr {
+  color: $darkTextColor;
+}
+.visible {
+  display: block;
 }

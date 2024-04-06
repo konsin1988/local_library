@@ -1,0 +1,6 @@
+@mixin linkActive($scale) {
+  @extend %linkHover;
+  &:active {
+    transform: scale($scale);
+  }
+}

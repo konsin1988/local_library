@@ -14,5 +14,9 @@ app.use(express.json({ extended: true }));
 
 /*********Routes ****************** */
 app.use("/", require("./routes/index"));
+app.use("/", require("./routes/notifications"));
+app.use("/", require("./routes/account"));
+app.use("/", require("./routes/welcome"));
+app.use("/", require("./routes/signup"));
 
 module.exports = { app, PORT };

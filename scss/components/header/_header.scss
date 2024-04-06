@@ -6,6 +6,7 @@ header {
   height: 60px;
   display: flex;
   justify-content: center;
+  z-index: 10;
 
   ul {
     text-decoration: none;
@@ -18,15 +19,18 @@ header {
     width: 70vw;
     background-color: #fff9f9;
     border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px $shadowColor;
   }
   li {
-    display: flex;
-    align-items: center;
     font-size: 16;
-    color: #808080;
     cursor: pointer;
     transition: all 0.1s;
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #808080;
+    }
     span {
       font-weight: 500;
     }

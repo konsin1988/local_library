@@ -6,14 +6,18 @@ mixin Header(num)
     header
         ul
             li(class=classes[0])
-                span(class="material-symbols-outlined") home
-                span Home 
+                a(href="/")
+                    span(class="material-symbols-outlined") home
+                    span Home 
             li(class=classes[1]) 
-                span(class="material-symbols-outlined") notifications
-                span Notifications 
+                a(href="/notifications")
+                    span(class="material-symbols-outlined") notifications
+                    span Notifications 
             li(class=classes[2]) 
-                span(class="material-symbols-outlined") search
-                span Search
+                a(href="/search")
+                    span(class="material-symbols-outlined") search
+                    span Search
             li(class=classes[3]) 
-                span(class="material-symbols-outlined") book_4
-                span Book Store
+                a(href="/book_store")
+                    span(class="material-symbols-outlined") book_4
+                    span Book Store

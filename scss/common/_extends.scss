@@ -1,0 +1,7 @@
+%linkHover {
+  transition: all 0.1s;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+}
