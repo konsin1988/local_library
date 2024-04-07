@@ -187,11 +187,11 @@ input[type=button] {
   zoom: 1;
 }
 
-.sign-up .sign-up-with-google, .welcome .get-started, .account .account-menu li, .account .account-top p, .not-types .sqr h3, .not-controls span, .controls span, .card h3, .card img {
+span.previous-page-arrow, .sign .account-quest a, .sign .sign-up-with-google, .account .account-top p, .notification-bx .not-types .sqr h3, .controls span, .card h3, .card img, .submit-btn, .input-bx span.lock {
   transition: all 0.1s;
   cursor: pointer;
 }
-.sign-up .sign-up-with-google:hover, .welcome .get-started:hover, .account .account-menu li:hover, .account .account-top p:hover, .not-types .sqr h3:hover, .not-controls span:hover, .controls span:hover, .card h3:hover, .card img:hover {
+span.previous-page-arrow:hover, .sign .account-quest a:hover, .sign .sign-up-with-google:hover, .account .account-top p:hover, .notification-bx .not-types .sqr h3:hover, .controls span:hover, .card h3:hover, .card img:hover, .submit-btn:hover, .input-bx span.lock:hover {
   opacity: 0.5;
 }
 
@@ -218,8 +218,57 @@ body {
   min-height: 100vh;
   position: relative;
   background: #fff9f9;
-  padding: 0 3.5%;
   overflow-x: hidden;
+  padding: 0 1%;
+}
+
+.input-bx {
+  position: relative;
+}
+.input-bx label {
+  color: #db8606;
+  margin: 2% 7%;
+  display: block;
+  font-size: 1.3em;
+}
+.input-bx input {
+  font-size: 1.4em;
+  padding: 2% 5%;
+  display: block;
+  outline: none;
+  border: none;
+  width: 90%;
+  border-radius: 20px;
+  margin: 1% 5% 3% 5%;
+  background: hsla(0, 0%, 95%, 0.6);
+  color: #4a3737;
+}
+.input-bx span.lock {
+  position: absolute;
+  top: 55%;
+  right: 8%;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #db8606;
+}
+.input-bx span.lock:active {
+  transform: scale(1);
+}
+.input-bx label::first-letter {
+  text-transform: capitalize;
+}
+
+.submit-btn {
+  text-align: center;
+  margin: 6% 10%;
+  background: #db8606;
+  padding: 3% 22%;
+  color: #4a3737;
+  border-radius: 20px;
+  font-size: 1.3em;
+}
+.submit-btn:active {
+  transform: scale(0.9);
 }
 
 body {
@@ -425,25 +474,15 @@ header li:hover:not(.active) span {
   opacity: 0.5;
 }
 
-.not-controls {
-  margin: 70px 0 0 5%;
-}
-.not-controls span {
-  color: #db8606;
-  font-size: 50px;
-}
-.not-controls span:active {
-  transform: scale(0.8);
-}
-
-h1 {
+.notification-bx h1 {
+  display: block;
+  margin-top: 20%;
   font-size: 2.2em;
   color: #4a3737;
   font-weight: 600;
   margin-left: 5%;
 }
-
-.not-types {
+.notification-bx .not-types {
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -451,36 +490,34 @@ h1 {
   padding: 0 5%;
   margin-bottom: -10px;
 }
-.not-types .sqr {
+.notification-bx .not-types .sqr {
   width: 20%;
   text-align: center;
   position: relative;
 }
-.not-types .sqr h3 {
+.notification-bx .not-types .sqr h3 {
   font-size: 1.4em;
   color: #4a3737;
   font-weight: 500;
 }
-.not-types .sqr h3:active {
+.notification-bx .not-types .sqr h3:active {
   transform: scale(0.9);
 }
-
-.not-active {
+.notification-bx .not-active {
   display: flex;
   justify-content: space-between;
   padding: 0 10%;
 }
-.not-active div {
+.notification-bx .not-active div {
   margin-bottom: -17px;
   width: 10%;
   text-align: center;
   position: relative;
 }
-.not-active div.active {
+.notification-bx .not-active div.active {
   border-bottom: 3px solid #db8606;
 }
-
-.empty {
+.notification-bx .empty {
   width: 100%;
   height: 100%;
   display: flex;
@@ -490,45 +527,43 @@ h1 {
   padding: 3%;
   min-height: 40%;
 }
-.empty img {
+.notification-bx .empty img {
   width: 40%;
 }
-.empty h2 {
+.notification-bx .empty h2 {
   font-size: 1.5em;
   font-weight: 600;
 }
-.empty p {
+.notification-bx .empty p {
   font-size: 1.2em;
 }
-
-.hide-empty {
+.notification-bx .hide-empty {
   display: none;
 }
-
-.book-bx {
+.notification-bx .book-bx {
   padding: 2%;
 }
-.book-bx img {
+.notification-bx .book-bx img {
   width: 17%;
   border-radius: 20px;
 }
-.book-bx .text-bx {
+.notification-bx .book-bx .text-bx {
   position: relative;
   float: right;
   width: 75%;
 }
-.book-bx .text-bx h4 {
+.notification-bx .book-bx .text-bx h4 {
   padding: 1%;
   font-size: 1.3em;
   font-weight: 500;
   color: #4a3737;
 }
-.book-bx .text-bx p {
+.notification-bx .book-bx .text-bx p {
   padding: 1%;
   font-size: 1.2em;
   color: #4a3737;
 }
-.book-bx .text-bx .reserved {
+.notification-bx .book-bx .text-bx .reserved {
   position: absolute;
   top: 0;
   right: 0;
@@ -537,7 +572,7 @@ h1 {
   font-weight: 600;
   text-decoration: underline;
 }
-.book-bx .text-bx .reserving-time {
+.notification-bx .book-bx .text-bx .reserving-time {
   position: absolute;
   bottom: -50%;
   right: 15%;
@@ -593,21 +628,6 @@ h1 {
 .account .account-bx .account-txt p {
   font-size: 1.2em;
 }
-.account .account-menu {
-  margin: 7% 0;
-}
-.account .account-menu li {
-  background: #db8606;
-  font-size: 1.3em;
-  font-weight: 500;
-  padding: 4%;
-  margin: 4% 2%;
-  border-radius: 20px;
-  color: #4a3737;
-}
-.account .account-menu li:active {
-  transform: scale(0.9);
-}
 
 .welcome {
   width: 100%;
@@ -640,33 +660,20 @@ h1 {
   text-align: center;
   font-size: 1.1em;
 }
-.welcome .get-started {
-  text-align: center;
-  margin: 10%;
-  background: #db8606;
-  padding: 3.5% 20%;
-  color: #4a3737;
-  border-radius: 20px;
-  font-size: 1.3em;
-}
-.welcome .get-started:active {
-  transform: scale(0.9);
-}
 
-.sign-up {
+.sign {
   width: 100%;
   height: 100%;
 }
-.sign-up span.previous-page-sign {
-  font-size: 50px;
-  margin-top: 4%;
-  color: #db8606;
-}
-.sign-up h1 {
-  margin-top: 5%;
+.sign h1 {
+  display: block;
+  margin-top: 20%;
   color: #4a3737;
+  font-size: 2.2em;
+  font-weight: 600;
+  padding: 0 8%;
 }
-.sign-up .sign-up-with-google {
+.sign .sign-up-with-google {
   margin: 5% 10%;
   display: flex;
   align-items: center;
@@ -674,14 +681,14 @@ h1 {
   border-radius: 25px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
-.sign-up .sign-up-with-google:active {
+.sign .sign-up-with-google:active {
   transform: scale(0.98);
 }
-.sign-up .sign-up-with-google img {
+.sign .sign-up-with-google img {
   width: 35px;
   margin: 2% 4%;
 }
-.sign-up .sign-up-with-google span {
+.sign .sign-up-with-google span {
   font-size: 1.4em;
   font-weight: 500;
   color: #db8606;
@@ -689,20 +696,112 @@ h1 {
   letter-spacing: 3.5px;
   padding: 0 10%;
 }
-.sign-up .or-bx {
+.sign .or-bx {
   margin-top: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sign-up .or-bx .bxs {
+.sign .or-bx .bxs {
   border-bottom: 1px solid #db8606;
   width: 30%;
 }
-.sign-up .or-bx span {
+.sign .or-bx span {
   font-family: Raleway;
   font-size: 1.6em;
   font-weight: 600;
   padding: 0 5%;
   color: #db8606;
+}
+.sign .account-quest {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1.1em;
+  margin: -3.5% 0 7%;
+}
+.sign .account-quest a {
+  text-decoration: none;
+  color: #db8606;
+  font-weight: 600;
+}
+.sign .account-quest a:active {
+  transform: scale(0.95);
+}
+
+span.previous-page-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+  z-index: 100;
+  border-radius: 10px;
+}
+span.previous-page-arrow:active {
+  transform: scale(0.9);
+}
+
+.white {
+  color: #db8606;
+  background: transparent;
+}
+
+.color {
+  color: #fff;
+  background: #db8606;
+}
+
+.with-header {
+  margin: 11% 5%;
+}
+
+.without-header {
+  margin: 5%;
+}
+
+.modal {
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 100px;
+}
+.modal .modal-bx {
+  width: 500px;
+  height: 750px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.2);
+}
+.modal .modal-bx img:nth-child(1) {
+  width: 50%;
+  margin: 15% 10% 10%;
+}
+.modal .modal-bx h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #db8606;
+  margin-bottom: 3%;
+}
+.modal .modal-bx p {
+  font-size: 1.1em;
+  padding: 0 15%;
+  text-align: center;
+  color: #4a3737;
+}
+.modal .modal-bx img:nth-child(4) {
+  width: 20%;
+  margin-top: 10%;
+}
+
+.hidden {
+  display: none;
 }

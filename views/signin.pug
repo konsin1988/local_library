@@ -1,0 +1,14 @@
+extends layout 
+
+block content
+    body 
+        .sign
+            +Previous_page_arrow("white")
+            +Signup_signin("Sign in")
+
+            +Input-bx("email", "email")
+            +Input-bx("password", "password", "true")
+            +Submit_btn("Sign in", "signin-btn")
+            +Account_quest("Are you a new member? ", "SIGN UP")
+
+        +Modal_window("Sign In Successful", "Your account has been created. Please wait a moment, we are preparing for you.")

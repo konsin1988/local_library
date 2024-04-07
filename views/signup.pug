@@ -2,14 +2,17 @@ extends layout
 
 block content
     body 
-        .sign-up
-            span(class="material-symbols-outlined previous-page-sign") chevron_left
-            h1 Sign up
-            .sign-up-with-google
-                img(src="./images/sign_up_google.png")
-                span Sign up with google
-            .or-bx 
-                .bxs 
-                span Or
-                .bxs 
+        .sign
+            +Previous_page_arrow("white")
+            +Signup_signin("Sign up")
+
+            +Input-bx("firstname", "text")
+            +Input-bx("lastname", "text")
+            +Input-bx("email", "email")
+            +Input-bx("password", "password", "true")
+            +Input-bx("confirm", "password", "true")
+            +Submit_btn("Sign up", "signup-btn")
+            +Account_quest("Already have an account? ", "SIGN IN")
+
+
             

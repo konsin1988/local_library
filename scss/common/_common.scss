@@ -20,6 +20,51 @@ body {
   min-height: 100vh;
   position: relative;
   background: #fff9f9;
-  padding: 0 3.5%;
   overflow-x: hidden;
+  padding: 0 1%;
+}
+
+.input-bx {
+  position: relative;
+  label {
+    color: $primaryColor;
+    margin: 2% 7%;
+    display: block;
+    font-size: 1.3em;
+  }
+  input {
+    font-size: 1.4em;
+    padding: 2% 5%;
+    display: block;
+    outline: none;
+    border: none;
+    width: 90%;
+    border-radius: 20px;
+    margin: 1% 5% 3% 5%;
+    background: hsla(0, 0%, 95%, 0.6);
+    color: $darkTextColor;
+  }
+  span.lock {
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: $primaryColor;
+    @include linkActive(1);
+  }
+  label::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.submit-btn {
+  text-align: center;
+  margin: 6% 10%;
+  background: $primaryColor;
+  padding: 3% 22%;
+  color: $darkTextColor;
+  border-radius: 20px;
+  font-size: 1.3em;
+  @include linkActive(0.9);
 }

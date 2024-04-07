@@ -1,0 +1,23 @@
+span.previous-page-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+  z-index: 100;
+  @include linkActive(0.9);
+  border-radius: 10px;
+}
+.white {
+  color: $primaryColor;
+  background: transparent;
+}
+.color {
+  color: #fff;
+  background: $primaryColor;
+}
+.with-header {
+  margin: 11% 5%;
+}
+.without-header {
+  margin: 5%;
+}

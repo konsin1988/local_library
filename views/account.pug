@@ -15,10 +15,10 @@ block content
                     h2 Onyia Chikamso 
                     p email@email.com
 
-            ul(class="account-menu") 
-                li Updates 
-                li Books 
-                li Notification
-                li View Account Settings 
-                li Sign Out
+            .account-menu
+                +Submit_btn("Updates", "account-menu-btn") 
+                +Submit_btn("Books", "account-menu-btn") 
+                +Submit_btn("Notification", "account-menu-btn")
+                +Submit_btn("View Account Settings", "account-menu-btn") 
+                +Submit_btn("Sign Out", "account-menu-btn")
             

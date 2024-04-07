@@ -1,0 +1,4 @@
+mixin Account_quest(txt, sign)
+    - const href = sign === "SIGN IN" ? "signin" : "signup"
+    .account-quest=txt 
+                a(href=`/${href}`)=sign 

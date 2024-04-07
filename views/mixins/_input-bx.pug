@@ -1,0 +1,7 @@
+mixin Input-bx(title, type, lock=false)
+    - const titleUppercase = title[0].toUpperCase() + title.slice(1);
+    .input-bx 
+        label(for=`${title}`)= titleUppercase
+        input(id=`${title}` type=`${type}`, name=`${title}`)
+        if lock
+            span(class="material-symbols-outlined lock") lock

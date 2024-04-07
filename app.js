@@ -18,5 +18,6 @@ app.use("/", require("./routes/notifications"));
 app.use("/", require("./routes/account"));
 app.use("/", require("./routes/welcome"));
 app.use("/", require("./routes/signup"));
+app.use("/", require("./routes/signin"));
 
 module.exports = { app, PORT };

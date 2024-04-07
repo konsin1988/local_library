@@ -45,17 +45,4 @@
       }
     }
   }
-  .account-menu {
-    margin: 7% 0;
-    li {
-      background: $primaryColor;
-      font-size: 1.3em;
-      font-weight: 500;
-      padding: 4%;
-      margin: 4% 2%;
-      border-radius: 20px;
-      color: $darkTextColor;
-      @include linkActive(0.9);
-    }
-  }
 }

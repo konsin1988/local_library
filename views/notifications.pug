@@ -5,56 +5,56 @@ extends layout
 block content
     body 
         +Header(1)
-        .not-controls
-            span(class="material-symbols-outlined") chevron_left
-        h1 Notifications 
-        .not-types 
-            div(class="sqr ")
-                h3 All 
-            div(class="sqr")
-                h3 Reserved 
-            div(class="sqr")
-                h3 Availible
-        .not-active 
-            div(class="active") 
-            div
-            div
-        hr
-        .search-books                                
-            div(class="empty hide-empty")                    // empty 
-                img(src="./images/empty_search.png")
-                h2 Empty 
-                p You dont have any notification at this time
+        .notification-bx
+            +Previous_page_arrow("white", "with-header")
+            h1 Notifications 
+            .not-types 
+                div(class="sqr ")
+                    h3 All 
+                div(class="sqr")
+                    h3 Reserved 
+                div(class="sqr")
+                    h3 Availible
+            .not-active 
+                div(class="active") 
+                div
+                div
+            hr
+            .search-books                                
+                div(class="empty hide-empty")                    // empty 
+                    img(src="./images/empty_search.png")
+                    h2 Empty 
+                    p You dont have any notification at this time
 
-            .book-bx 
-                img(src="./images/poetry_covers/1.jpg", alt="poetry")
-                .text-bx 
-                    h4 Kamso 
-                    p Meet you
-                    p(class="reserving-time") 
-            hr
-            .book-bx 
-                img(src="./images/poetry_covers/1.jpg", alt="poetry")
-                .text-bx 
-                    h4 Kamso 
-                    p Meet you
-                    p(class="reserved") Reserved
-                    p(class="reserving-time") 12.04.2024 13:54
-            hr
-            .book-bx 
-                img(src="./images/poetry_covers/1.jpg", alt="poetry")
-                .text-bx 
-                    h4 Kamso 
-                    p Meet you
-                    p(class="reserved") Reserved
-                    p(class="reserving-time") 12.04.2024 13:54
-            hr
-            .book-bx 
-                img(src="./images/poetry_covers/1.jpg", alt="poetry")
-                .text-bx 
-                    h4 Kamso 
-                    p Meet you
-                    p(class="reserved")
-                    p(class="reserving-time")
-            hr
-              
+                .book-bx 
+                    img(src="./images/poetry_covers/1.jpg", alt="poetry")
+                    .text-bx 
+                        h4 Kamso 
+                        p Meet you
+                        p(class="reserving-time") 
+                hr
+                .book-bx 
+                    img(src="./images/poetry_covers/1.jpg", alt="poetry")
+                    .text-bx 
+                        h4 Kamso 
+                        p Meet you
+                        p(class="reserved") Reserved
+                        p(class="reserving-time") 12.04.2024 13:54
+                hr
+                .book-bx 
+                    img(src="./images/poetry_covers/1.jpg", alt="poetry")
+                    .text-bx 
+                        h4 Kamso 
+                        p Meet you
+                        p(class="reserved") Reserved
+                        p(class="reserving-time") 12.04.2024 13:54
+                hr
+                .book-bx 
+                    img(src="./images/poetry_covers/1.jpg", alt="poetry")
+                    .text-bx 
+                        h4 Kamso 
+                        p Meet you
+                        p(class="reserved")
+                        p(class="reserving-time")
+                hr
+                

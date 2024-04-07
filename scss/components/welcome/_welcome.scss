@@ -28,14 +28,4 @@
     text-align: center;
     font-size: 1.1em;
   }
-  .get-started {
-    text-align: center;
-    margin: 10%;
-    background: $primaryColor;
-    padding: 3.5% 20%;
-    color: $darkTextColor;
-    border-radius: 20px;
-    font-size: 1.3em;
-    @include linkActive(0.9);
-  }
 }
