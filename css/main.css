@@ -219,7 +219,6 @@ body {
   position: relative;
   background: #fff9f9;
   overflow-x: hidden;
-  padding: 0 1%;
 }
 
 .input-bx {
@@ -271,11 +270,29 @@ body {
   transform: scale(0.9);
 }
 
+.rating {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin-bottom: 5%;
+  margin-left: 8%;
+}
+.rating .filled-star {
+  color: #db8606;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.rating .not-filled-star {
+  color: #db8606;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
 body {
   font-family: Inter;
 }
 
 .logo-user {
+  padding: 0 1%;
   margin-top: 60px;
   height: 120px;
   display: flex;
@@ -314,6 +331,7 @@ body {
 }
 
 .cards {
+  padding: 0 1%;
   display: flex;
   margin-top: 3%;
   overflow-x: hidden;
@@ -356,22 +374,6 @@ body {
   color: #4a3737;
   padding: 2% 7%;
   font-size: 1.1em;
-}
-.card .rating {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  margin-bottom: 5%;
-  margin-left: 8%;
-}
-.card .filled-star {
-  color: #db8606;
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
-}
-.card .not-filled-star {
-  color: #db8606;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 .controls {
@@ -804,4 +806,43 @@ span.previous-page-arrow:active {
 
 .hidden {
   display: none;
+}
+
+.reserve {
+  position: relative;
+}
+.reserve img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.reserve .txt-content {
+  margin-top: 70%;
+  background: #fff9f9;
+  position: absolute;
+  z-index: 5;
+  padding: 10% 8%;
+  border-radius: 10%;
+}
+.reserve .txt-content h1 {
+  font-size: 2.2em;
+  color: #db8606;
+  font-weight: 600;
+}
+.reserve .txt-content p {
+  font-size: 1.5em;
+  padding: 5% 2%;
+  text-align: justify;
+}
+.reserve .txt-content .rating-box {
+  position: relative;
+  margin-top: 7%;
+  padding-top: 5%;
+}
+.reserve .txt-content p.last {
+  padding: 0 25%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 200;
 }

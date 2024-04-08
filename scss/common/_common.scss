@@ -21,7 +21,6 @@ body {
   position: relative;
   background: #fff9f9;
   overflow-x: hidden;
-  padding: 0 1%;
 }
 
 .input-bx {
@@ -67,4 +66,21 @@ body {
   border-radius: 20px;
   font-size: 1.3em;
   @include linkActive(0.9);
+}
+
+.rating {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin-bottom: 5%;
+  margin-left: 8%;
+  .filled-star {
+    color: $primaryColor;
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+  .not-filled-star {
+    color: $primaryColor;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
 }

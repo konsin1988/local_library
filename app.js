@@ -19,5 +19,6 @@ app.use("/", require("./routes/account"));
 app.use("/", require("./routes/welcome"));
 app.use("/", require("./routes/signup"));
 app.use("/", require("./routes/signin"));
+app.use("/", require("./routes/reserve"));
 
 module.exports = { app, PORT };

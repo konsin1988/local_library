@@ -3,6 +3,7 @@ body {
 }
 
 .logo-user {
+  padding: 0 1%;
   margin-top: 60px;
   height: 120px;
   display: flex;
@@ -42,9 +43,8 @@ body {
   }
 }
 .cards {
+  padding: 0 1%;
   display: flex;
-  // justify-content: space-between;
-  // align-items: center;
   margin-top: 3%;
   overflow-x: hidden;
   flex-wrap: nowrap;
@@ -79,23 +79,6 @@ body {
     color: $darkTextColor;
     padding: 2% 7%;
     font-size: 1.1em;
-  }
-
-  .rating {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    margin-bottom: 5%;
-    margin-left: 8%;
-  }
-  .filled-star {
-    color: $primaryColor;
-    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
-  }
-  .not-filled-star {
-    color: $primaryColor;
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   }
 }
 .controls {

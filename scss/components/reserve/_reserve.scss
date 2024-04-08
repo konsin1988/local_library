@@ -1,0 +1,38 @@
+.reserve {
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .txt-content {
+    margin-top: 70%;
+    background: $bgColor;
+    position: absolute;
+    z-index: 5;
+    padding: 10% 8%;
+    border-radius: 10%;
+    h1 {
+      font-size: 2.2em;
+      color: $primaryColor;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.5em;
+      padding: 5% 2%;
+      text-align: justify;
+    }
+    .rating-box {
+      position: relative;
+      margin-top: 7%;
+      padding-top: 5%;
+    }
+    p.last {
+      padding: 0 25%;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: 200;
+    }
+  }
+}

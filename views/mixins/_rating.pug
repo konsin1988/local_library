@@ -1,0 +1,23 @@
+mixin Rating(ratingAmount)
+    - 
+        const arrayRatingStars = [ 
+            ["not-filled-star", "star"], 
+            ["not-filled-star", "star"], 
+            ["not-filled-star", "star"], 
+            ["not-filled-star", "star"], 
+            ["not-filled-star", "star"], 
+        ]
+
+        let i = 0;
+        for( ; i <= ratingAmount-1; i++) {
+            arrayRatingStars[i][0] = "filled-star"
+        }
+        if((i + 1 - ratingAmount) < 0.5) {
+            arrayRatingStars[i][0] = "filled-star"
+            arrayRatingStars[i][1] = "star_half"
+        }
+    
+    .rating
+        each star in arrayRatingStars
+            span(class=`material-symbols-outlined ${star[0]}`)=star[1]
+        
