@@ -1,0 +1,47 @@
+.search {
+  margin-top: 150px;
+  padding: 0 3%;
+  h1 {
+    font-size: 2.2em;
+    padding: 1% 3%;
+    font-weight: 700;
+    color: $darkTextColor;
+  }
+  .input-bx {
+    position: relative;
+    input {
+      padding-left: 10%;
+    }
+    span.search-input {
+      position: absolute;
+      top: 0;
+      left: 5.5%;
+      margin: 2%;
+      font-size: 2em;
+      font-weight: 700;
+      color: $darkTextColor;
+    }
+  }
+  h2 {
+    font-size: 1.4em;
+    padding: 1% 5%;
+    font-weight: 700;
+    color: $darkTextColor;
+    margin-bottom: 3%;
+  }
+  .trending-bx {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 2em;
+      font-weight: 700;
+      color: $darkTextColor;
+      margin: 0 2%;
+    }
+    p {
+      display: inline;
+      color: $darkTextColor;
+      font-size: 1.2em;
+    }
+  }
+}

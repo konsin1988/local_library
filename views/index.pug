@@ -15,16 +15,9 @@ block content
             hr
             h2 Poetry
             .cards 
-                div(class="card visible") 
-                    img(src="./images/poetry_covers/1.png")
-                    h3.book-title Prisoner (Arnod Miller)
-                    p.short-description Lorem ipsum dolor sit sitlorem ipsum dolor sit sit
-                    +Rating(3.7)
-                div(class="card visible") 
-                    img(src="./images/poetry_covers/1.png")
-                    h3.book-title Prisoner (Arnod Miller)
-                    p.short-description Lorem ipsum dolor sit sit
-                    +Rating(4)
+                +Card("./images/poetry_covers/1.png", "Prisoner (Arnod Miller)", "Lorem ipsum dolor adsfasdfadsfasfas fasdfsadfas dfsadfsadfs dfasfs adfasdfasdf sdasit sitlorem ipsum dolor sit sit", 2)
+                +Card("./images/poetry_covers/1.png", "Prisoner (Arnod Miller)", "Lorem ipsum dolor sit sitlorem ipsum dolor sit sit", 4.3)
+                
                 div(class="card")
                     img(src="./images/poetry_covers/2.png")
                     h3.book-title Prisoner (Arnod Miller)
@@ -42,16 +35,8 @@ block content
             hr
             h2 Romance
             .cards 
-                div(class="card visible") 
-                    img(src="./images/poetry_covers/1.png")
-                    h3.book-title Prisoner (Arnod Miller)
-                    p.short-description Lorem ipsum dolor sit sitlorem ipsum dolor sit sit
-                    +Rating(4.7)
-                div(class="card visible") 
-                    img(src="./images/poetry_covers/1.png")
-                    h3.book-title Prisoner (Arnod Miller)
-                    p.short-description Lorem ipsum dolor sit sit
-                    +Rating(3.8)
+                +Card("./images/poetry_covers/1.png", "Prisoner (Arnod Miller)", "Lorem ipsum dolor sit sitlorem ipsum dolor sit sit", 3.7)
+                +Card("./images/poetry_covers/1.png", "Prisoner (Arnod Miller)", "Lorem ipsum dolor sit sitlorem ipsum dolor sit sit", 4.8)
             .controls 
                 span(class="material-symbols-outlined") chevron_left
                 span(class="material-symbols-outlined") chevron_right
@@ -59,16 +44,8 @@ block content
             hr
             h2 Business books
             .cards 
-                div(class="card visible") 
-                    img(src="./images/poetry_covers/1.png")
-                    h3.book-title Prisoner (Arnod Miller)
-                    p.short-description Lorem ipsum dolor sit sitlorem ipsum dolor sit sit
-                    +Rating(2)
-                div(class="card visible") 
-                    img(src="./images/poetry_covers/1.png")
-                    h3.book-title Prisoner (Arnod Miller)
-                    p.short-description Lorem ipsum dolor sit sit
-                    +Rating(4.7)
+                +Card("./images/poetry_covers/1.png", "Prisoner (Arnod Miller)", "Lorem ipsum dolor sit sitlorem ipsum dolor sit sit", 3.3)
+                +Card("./images/poetry_covers/1.png", "Prisoner (Arnod Miller)", "Lorem ipsum dolor sit sitlorem ipsum dolor sit sit", 4.9)
             .controls 
                 span(class="material-symbols-outlined") chevron_left
                 span(class="material-symbols-outlined") chevron_right

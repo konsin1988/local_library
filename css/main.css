@@ -343,7 +343,6 @@ body {
 .card {
   width: 45%;
   border-radius: 25px;
-  height: 450px;
   position: relative;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   margin: 0 3% 3% 3%;
@@ -361,7 +360,7 @@ body {
   transform: scale(0.98);
 }
 .card h3 {
-  margin-top: 100%;
+  margin-top: 108%;
   color: #db8606;
   font-size: 1.4em;
   font-weight: 500;
@@ -374,6 +373,9 @@ body {
   color: #4a3737;
   padding: 2% 7%;
   font-size: 1.1em;
+}
+.card .rating-bx {
+  height: 50px;
 }
 
 .controls {
@@ -845,4 +847,52 @@ span.previous-page-arrow:active {
   text-align: center;
   font-size: 1.2em;
   font-weight: 200;
+}
+
+.search {
+  margin-top: 150px;
+  padding: 0 3%;
+}
+.search h1 {
+  font-size: 2.2em;
+  padding: 1% 3%;
+  font-weight: 700;
+  color: #4a3737;
+}
+.search .input-bx {
+  position: relative;
+}
+.search .input-bx input {
+  padding-left: 10%;
+}
+.search .input-bx span.search-input {
+  position: absolute;
+  top: 0;
+  left: 5.5%;
+  margin: 2%;
+  font-size: 2em;
+  font-weight: 700;
+  color: #4a3737;
+}
+.search h2 {
+  font-size: 1.4em;
+  padding: 1% 5%;
+  font-weight: 700;
+  color: #4a3737;
+  margin-bottom: 3%;
+}
+.search .trending-bx {
+  display: flex;
+  align-items: center;
+}
+.search .trending-bx span {
+  font-size: 2em;
+  font-weight: 700;
+  color: #4a3737;
+  margin: 0 2%;
+}
+.search .trending-bx p {
+  display: inline;
+  color: #4a3737;
+  font-size: 1.2em;
 }

@@ -13,6 +13,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json({ extended: true }));
 
 /*********Routes ****************** */
+
 app.use("/", require("./routes/index"));
 app.use("/", require("./routes/notifications"));
 app.use("/", require("./routes/account"));
@@ -20,5 +21,10 @@ app.use("/", require("./routes/welcome"));
 app.use("/", require("./routes/signup"));
 app.use("/", require("./routes/signin"));
 app.use("/", require("./routes/reserve"));
+app.use("/", require("./routes/search"));
+
+app.use("/*", function (_, response) {
+  response.redirect(302, "/");
+});
 
 module.exports = { app, PORT };

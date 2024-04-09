@@ -1,0 +1,23 @@
+extends layout 
+
+
+
+block content
+    body 
+        +Header(2)
+        +Previous_page_arrow("white", "with-header")
+        .search
+            - const search_items = ["Romantic story", "Rich Dad Poor Dad", "Self Improvement Books", "Self Improvement Books", "My Mothers Rival" ]
+            
+            h1 Search
+            .input-bx
+                input(id="seach-input" name="search-input", type="text", placeholder="Search For Books")
+                span(class="material-symbols-outlined search-input") search
+            h2 Trending 
+            for item of search_items 
+                .trending-bx 
+                    span(class="material-symbols-outlined") search
+                    p=item 
+                hr
+
+        

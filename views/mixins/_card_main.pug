@@ -1,0 +1,7 @@
+mixin Card(img_href, title, description, rating)
+    div(class="card visible") 
+        img(src=img_href)
+        h3.book-title=title
+        p.short-description=description
+        .rating-bx
+            +Rating(rating)
